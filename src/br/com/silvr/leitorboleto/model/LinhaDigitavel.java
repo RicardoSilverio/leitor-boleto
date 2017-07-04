@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 public final class LinhaDigitavel implements RepresentacaoNumerica {
 	
-	private static final Pattern REGEX = Pattern.compile("^\\d{47}$");
+	private static final Pattern REGEX = Pattern.compile("^\\d{47,48}$");
 	
 	private boolean representacaoValida;
 	private String linhaDigitavel;

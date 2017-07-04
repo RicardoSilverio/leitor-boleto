@@ -45,7 +45,7 @@ public final class BoletoComercial implements Boleto {
 	
 	private boolean processarLinhaDigitavel() {
 		
-		if(!linhaDigitavel.isRepresentacaoValida()) {
+		if(!linhaDigitavel.isRepresentacaoValida() || linhaDigitavel.getRepresentacaoNumerica().length() != 47) {
 			return false;
 		}
 		
